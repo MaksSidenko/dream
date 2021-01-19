@@ -9,7 +9,7 @@
          "request": "launch",
          "type": "pwa-chrome",
          "url": "http://localhost:5500",
-         "webRoot": "${workspaceFolder}/function/f1"
+         "webRoot": "${workspaceFolder}/dream/technology/js/tasks/task_2_pop_up"
       }
    ]
 }
