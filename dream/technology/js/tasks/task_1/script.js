@@ -41,3 +41,7 @@ console.log(sum10(11)(111));
 sum11 = (a, b) => b ? a + b : c => a + c
 console.log(sum11(112)(12));
 
+
+
+
+

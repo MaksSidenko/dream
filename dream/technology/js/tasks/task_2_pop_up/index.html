@@ -5,8 +5,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -14,15 +14,72 @@
       .hi-wrap {
          flex-direction: row;
          justify-content: center;
-         width: 100%;
          display: flex;
-         background-color: forestgreen;
       }
 
       .hi {
-         color: black;
-         background-color: red;
          margin: 0;
+      }
+
+      .modal-overlay {
+         position: fixed;
+         right: 0;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         background: rgba(0, 0, 0, .3);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .modal-window {
+         width: 650px;
+         min-height: 50%;
+         background: #ffffff;
+         position: relative;
+
+      }
+
+      .modal-header {
+         display: flex;
+         justify-content: space-between;
+         border: none;
+         padding: 10px 20px;
+      }
+
+      .modal-header span {
+         font-size: 1.5rem;
+      }
+
+      .modal-content {
+         border: none;
+         padding: 10px 20px;
+      }
+
+      .modal-close {
+         cursor: pointer;
+      }
+
+      .modal-footer {
+         padding: 10px 20px;
+      }
+
+      .modal-footer {
+         display: flex;
+         justify-content: center;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+      }
+
+      .modal-footer button {
+         background: rgba(255, 0, 0, .66);
+         border: none;
+         min-width: 80px;
+         height: 25px;
+         margin: 1rem;
       }
    </style>
    <div class="hi-wrap">
@@ -30,21 +87,35 @@
          Привет
       </h1>
    </div>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nulla. Perferendis, culpa ducimus eaque consectetur
-   nobis numquam magni modi soluta rerum delectus animi nulla aliquid nam doloremque consequatur esse repudiandae
-   excepturi quas iusto alias cum dolorum nihil, ratione unde. Assumenda quis id temporibus doloremque quidem in
-   excepturi quae dolores, corporis molestiae? Aliquam molestiae sunt, excepturi autem qui reprehenderit nihil omnis
-   sint. Explicabo recusandae, nisi ut quia tempore magnam, exercitationem ipsam, assumenda distinctio cumque corrupti
-   nesciunt doloremque sit! A, laudantium eaque accusantium qui voluptates doloremque animi architecto, totam quidem
-   sint quod. Minima veniam eaque mollitia qui ratione molestias quis aspernatur ullam?
-   <div class="qwerty">
-      <h1 class="paragrapg">
-         Привет
-      </h1>
-   </div>
-   <script src="script.js">
 
-   </script>
+   <div class="mmodal">
+      <div class="modal-overlay">
+         <div class="modal-window">
+            <div class="modal-header">
+               <span>
+                  https://www.youtube.com/watch?v=FX2fiUvrYP4&list=PLqKQF2ojwm3n-ufn3E-l6Y0VxDrj3hM5M
+               </span>
+               <span class="modal-close">
+                  &times;
+               </span>
+            </div>
+            <div class="modal-content">
+               <span>
+                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+               </span>
+            </div>
+            <div class="modal-footer">
+               <button>Ok</button>
+               <button>Cancel</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <script src="base.js"></script>
+   <script src="plugins/modal.js"></script>
+   <script src="script.js"></script>
 </body>
 
 </html>
