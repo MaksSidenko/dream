@@ -8,14 +8,45 @@
 </head>
 
 <body>
-   <!-- <label><input type="checkbox" id="chbox" onchange="lala()">Ок
-   </label> -->
+   <style>
+      .changeable {
+         background: #000;
+         width: 1rem;
+         height: 1rem;
+      }
+   </style>
+   <label><input type="checkbox" id="chbox" onchange="lala()">Ок
+   </label>
    <!-- ---------------------------->
 
    <input type="radio" name="rd" value="1"> 1
    <input type="radio" name="rd" value="2"> 2
    <input type="radio" name="rd" value="3"> 3
    <button onclick="radio()">Кнопка</button>
+   <!-- ---------------------------->
+   <select name="" id="randomSelect" onchange="mySelect()">
+      <option value="">leo champion1</option>
+      <option value="">leo champion2</option>
+      <option value="">leo champion3</option>
+   </select>
+   <!-- ---------------------------- -->
+   <div class="">
+      <input type="range" min='0' max="100" step="1" oninput="fun1() " id="f1">
+      <p id="one">1</p>
+   </div>
+   <!-- событие oninput - срабатывает при любои изминение в элементе.
+   событие onchange - срабатывает только при потере фокуса в элементе   -->
+   <div class="">
+      <input type="range" min='0' max="100" step="1" oninput="fun2() " id="f2">
+      <div class="">
+         <input type="text" id='a_20_56'>
+      </div>
+   </div>
+   <div class="three">
+      <input type="range" min='0' max="100" step="1" oninput="fun3() " id="f3">
+      <div id="changeable" class="changeable"></div>
+   </div>
+
 
    <script src="script.js"></script>
 </body>

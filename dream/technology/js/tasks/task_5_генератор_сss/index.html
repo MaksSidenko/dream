@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <style>
+      #test-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 600px;
+      }
+
+      #test {
+         width: 1rem;
+         height: 1rem;
+         background-color: #000;
+         position: relative;
+      }
+   </style>
+   <label for="">Направо<input type="range" min="0" max="100" step="1" oninput="fun1()" id="f1"><input type="text"
+         id="i1"></label><br>
+   <label for="">Направо<input type="range" min="0" max="100" step="1" oninput="fun2()" id="f2"><input type="text"
+         id="i2"></label><br>
+   <label for="">Вниз<input type="range" min="0" max="100" step="1" oninput="fun3()" id="f3"><input type="text"
+         id="i3"></label><br>
+   <label for="">Направо<input type="range" min="0" max="100" step="1" oninput="fun4()" id="f4"><input type="text"
+         id="i4"></label>
+   <div class="test-container" id="test-container">
+      <div class="test" id="test"></div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

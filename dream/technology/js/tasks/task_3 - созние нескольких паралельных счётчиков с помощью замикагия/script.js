@@ -14,14 +14,4 @@ console.log(xz());
 console.log(xz());
 console.log(xz());
 
-// Задача 1 
-// Реализовать function sum таким образом, что бы sum(2,3)==sum(2)(3)===5
-function sum(a, b) {
-   if (b) {
-      return a + b
-   }
-   return function (b) {
-      return a + b
-   }
-}
-console.log(sum(3)(6));
+
